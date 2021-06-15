@@ -44,4 +44,11 @@ public class TestGreeter {
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
+  
+     @Test
+  public void greetShouldIncludeGreetinginlinux() {
+    String someone = "World, I'm in linux ";
+
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+  }
 }
