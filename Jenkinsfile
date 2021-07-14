@@ -1,3 +1,4 @@
+
 pipeline {
       agent any
       stages {
@@ -20,6 +21,11 @@ pipeline {
             stage('Deploy Production') {
                   steps {
                         echo "Deploying in Production Area"
+                  }
+            }
+			stage('Deploy Perf') {
+                  steps {
+                        echo "Deploying in Perf Area"
                   }
             }
       }
